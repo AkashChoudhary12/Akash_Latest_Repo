@@ -2,29 +2,18 @@ package GithubDemo;
 
 public class JAN01_WhileLoop {
 	public static void main(String[] args) {
-		
-		int i;
-		i = 1;
-		while (i <= 10) {
-			System.out.println(i);			
-			i++; // next value
-		}System.out.println();
-	
-		
-		for(i=1; i<=10; i++) {
-			System.out.println(i);
-		}System.out.println();
-		
-		i=1;
-		do {
-			
-			System.out.println(i);
-			
-			i++;
-			
+		//PalindromeNumber
+		int num=0123210;
+		int rev=0,num1=num;
+		int remainder;
+		while(num>0) 
+		{remainder=num%10;
+			rev=rev*10+remainder;
+			num=num/10;
 		}
-		while(i<=10);
-		System.out.println();
-		
+		if(num1==rev)
+			System.out.println(num1 +"is an Palindrome number");
+		else
+			System.out.println(num1 +"is not an Palindrome number");
 	}
 }
